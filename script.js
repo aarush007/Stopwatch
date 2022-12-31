@@ -39,12 +39,13 @@ function stopWatch() {
 
         if (second == 60) {
             minute++;
-            count = 0;
+            second = 0;
         }
 
         if (minute == 60) {
             hour++;
-            count = 0;
+            minute = 0;
+            second = 0;
         }
 
         let hrString = hour;
